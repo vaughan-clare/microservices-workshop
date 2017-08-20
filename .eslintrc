@@ -1,0 +1,10 @@
+{
+    "extends": ["seneca", "airbnb"],
+    "plugins": [
+        "import"
+    ],
+    "rules": {
+        "hapi/hapi-capitalize-modules": 0
+    }
+}
+
