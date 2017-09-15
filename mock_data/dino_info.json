@@ -1,5 +1,12 @@
 {
     "velociraptor": {
-        "period": "Cretaceous"
+        "period": "Cretaceous",
+        "diet": ["reptiles", "amphibians", "insects", "small dinosaurs", "mammals"],
+        "nameMeaning": "Swift Thief"
+    },
+    "tyrannosaurus-rex": {
+        "period": "Cretaceous",
+        "diet": ["herbivorous dinosaurs"],
+        "nameMeaning": "King of the Tyrant Lizards"
     }
 }
