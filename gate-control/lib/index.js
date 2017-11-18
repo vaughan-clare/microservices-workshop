@@ -11,10 +11,14 @@ module.exports = function () {
 };
 
 function controlGates(msg, done) {
+  const seneca = this;
+  seneca.log.info('CONTROL GATES', msg);
   done({ ok: true });
 }
 
 function controlGatesWithVerification(msg, done) {
+  const seneca = this;
+  seneca.log.info('CONTROL GATES WITH VERIFICATION', msg);
   gatesOpen = !gatesOpen;
   const gateStatus = gatesOpen ? 'open' : 'closed';
   done({ ok: true, gateStatus });

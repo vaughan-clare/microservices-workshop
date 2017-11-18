@@ -9,7 +9,7 @@ const opts = {
   // Listener connection options
   listener: {
     http: {
-      pin: ['role:dinosaur'],
+      pin: ['role:gates'],
       host: process.env.HOST || '0.0.0.0',
       port: process.env.PORT || '9001',
     },

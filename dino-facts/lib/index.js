@@ -12,7 +12,7 @@ module.exports = function () {
 
 function retrieveDinoFacts(msg, done) {
   const seneca = this;
-  seneca.log.info('IN DINO FACTS');
+  seneca.log.info('DINOSAUR DIRECTORY', msg);
   const dinosaurName = msg.dinosaurName;
   if (!dinosaurName || !dinoFacts[dinosaurName]) {
     done({ ok: false, error: `Could not retrive facts with property 'dinosaurName':'${dinosaurName}'` });
