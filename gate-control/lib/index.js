@@ -1,11 +1,13 @@
 /* eslint-disable no-use-before-define */
-let gatesOpen = true;
+"use strict";   //eslint-disable-line
+
+let gatesOpen = true; //eslint-disable-line
 
 module.exports = function () {
   const seneca = this;
 
   // Add actions this service will be listening for here
-  //TODO: add action to listen for { role: 'gates', cmd: 'control' }, and make it's handler `controlGates`
+  // TODO: add action to listen for { role: 'gates', cmd: 'control' }, and make it's handler `controlGates`
 
   return {
     name: 'jurassic-park',
