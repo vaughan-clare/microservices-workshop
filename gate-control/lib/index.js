@@ -14,7 +14,7 @@ module.exports = function () {
 function controlGates(msg, done) {
   const seneca = this;
   seneca.log.info('Running gate control', gatesOpen, msg);
-  gatesOpen = !gatesOpen;  
+  gatesOpen = !gatesOpen;
   done({ ok: true });
 }
 
