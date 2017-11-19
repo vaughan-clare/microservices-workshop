@@ -3,23 +3,21 @@ let gatesOpen = true;
 
 module.exports = function () {
   const seneca = this;
-  seneca.add({ role: 'gates', cmd: 'control' }, controlGates);
-  seneca.add({ role: 'gates', cmd: 'control', verify: true }, controlGatesWithVerification);
+
+  // Add actions this service will be listening for here
+  //TODO: add action to listen for { role: 'gates', cmd: 'control' }, and make it's handler `controlGates`
+
   return {
     name: 'jurassic-park',
   };
 };
 
 function controlGates(msg, done) {
-  const seneca = this;
-  seneca.log.info('CONTROL GATES', msg);
-  done({ ok: true });
-}
+  // TODO: set seneca variable
 
-function controlGatesWithVerification(msg, done) {
-  const seneca = this;
-  seneca.log.info('CONTROL GATES WITH VERIFICATION', msg);
-  gatesOpen = !gatesOpen;
-  const gateStatus = gatesOpen ? 'open' : 'closed';
-  done({ ok: true, gateStatus });
+  // TODO: log some message indicating service is being hit
+
+  // TODO: toggle `gatesOpen` boolean variable
+
+  // return {ok: true} via done
 }

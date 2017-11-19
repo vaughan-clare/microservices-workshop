@@ -11,7 +11,7 @@ const opts = {
     http: {
       pin: ['role:gates'],
       host: process.env.HOST || '0.0.0.0',
-      port: process.env.PORT || '9001',
+      port: process.env.PORT || '9001', // Different port from directory service for running locally
     },
   },
 };
