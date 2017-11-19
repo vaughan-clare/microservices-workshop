@@ -1,4 +1,6 @@
 /* eslint-disable no-use-before-define */
+"use strict";   //eslint-disable-line
+
 let gatesOpen = true;
 
 module.exports = function () {
@@ -6,7 +8,7 @@ module.exports = function () {
 
   // Add actions this service will be listening for here
   seneca.add({ role: 'gates', cmd: 'control' }, controlGates);
-  //TODO: add action to listen for { role: 'gates', cmd: 'control', verify: true }, and make it's handler `controlGates`
+  // TODO: add action to listen for { role: 'gates', cmd: 'control', verify: true }, and make it's handler `controlGates`
 
 
   return {
