@@ -1,4 +1,6 @@
 /* eslint-disable no-use-before-define */
+"use strict";   //eslint-disable-line
+
 const dinoFacts = require('../mock_data/dino_info');    // Data for dinosaur directory
 
 // Setup for Seneca instance

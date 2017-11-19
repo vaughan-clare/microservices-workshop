@@ -1,4 +1,5 @@
 /* eslint-disable no-use-before-define */
+"use strict";   //eslint-disable-line
 let gatesOpen = true;
 
 module.exports = function () {
