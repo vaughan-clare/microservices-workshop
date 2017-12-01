@@ -36,5 +36,9 @@ function directoryHandler(msg, done) {
     return the dino facts via the done() callback.
   */
 
+  // Note: The seneca callback can take 1 or 2 variables. If it is given 1 variable, it will respond with that variable
+  //  as though it has been successful (you can gracefully pass errors back from services this way). If passed 2 variables,
+  //  seneca will interpret the first variable as an error (usually a serious seneca breakage) and the second as a response. We avoid
+  //  this because Seneca doesn't respond gracefully when handed an error in this manner.
   done(/* Directory response */);
 }
